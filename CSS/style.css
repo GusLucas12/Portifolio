@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+/* ESTILO GERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #24252A;
+    height: 100vh;
+    
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+li,a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.btn-contato button{
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0088a9 ;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+/* ESTILO HEADER */
+header{
+    padding: 40px 4%;
+}
+header > .interface {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.img{
+    transition: all 0.3s ease 0s;
+}
+.img :hover{
+    transform: scale(1.05);
+}
+/* Footer */
+
+footer{
+    padding: 40px 4%;
+    border-top: 5px solid #538d9b;;
+    background-color: #0088a9;
+}
+footer > .interface{
+    color: #24252A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+footer .block{
+    display: block;
+}
+
+/* nav */
+.nav_links {
+
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+    transform: scale(1.05);
+}
+
+
+
+.main{
+    margin-top: 50px;
+    display:flexbox;
+     justify-content:center;
+    column-count: 2;
+}
+.title{
+    font-size: 32px;
+    color: black;
+    
+}
+/* topo  do site*/
+
+section.topo{
+    padding: 200px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1{
+ color: #FFFFFF;
+ font-size: 42px;
+ line-height: 40px;
+ font-family: "Poppins", sans-serif;
+}
+.topo .txt-topo-site h1 span{
+  color:   #0088a9;
+}
+.topo .txt-topo-site p{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 40px 0;
+    font-family: "Poppins", sans-serif;
+}
+.topo .img-topo-site{
+    transform: scale(1.5);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
+/* Sobre */
+section.sobre{
+    padding: 40px 4%;
+    font-family: "Poppins", sans-serif;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color:#fff;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #0088a9;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin:20px 0;
+    text-align: justify;
+}
+.sobre img{
+
+    border-radius: 50px;
+
+}
+/* especialidade */
+section.especialidades{
+    padding: 40px 4%;
+    display: block;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades h2{
+    color: #FFF;
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 50px;
+
+}
+.especialidades .barra{
+  
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+    border: 2px solid #0088a9;
+    border-radius: 20px;
+}
+.especialidades .flex .barra:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px;
+}
+.especialidades .barra h1{
+    color: #0088a9;
+    font-size: 28px;
+    margin-top: 15px 0;
+    margin-bottom: 20px;
+}
+/* Hobbies */
+section.hobbies{
+    padding: 40px 4%;
+    display: block;
+}
+section.hobbies .flex{
+    gap: 60px;
+}
+.hobbies h2{
+    color: #FFF;
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 50px;
+
+}
+/* Projetos */
+section.projetos{
+    padding: 40px 4%;
+    font-family: "Poppins", sans-serif;
+}
+section.projetos h2{
+    color:  #0088a9;
+}
+.projetos .barras{
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+    padding: 40px;
+    border: 2px solid #0088a9;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.projetos .barras .title{
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.projetos .barras:hover{
+    color: #24252A;
+    transform: scale(1.05);
+    background-color: #bdb7b7;
+}
+
+.projetos .barras .texto{
+    margin-top: 40px;
+}
+
+/* Clientes */
+
+section.clientes{
+    padding: 40px 4%;
+    font-family: "Poppins", sans-serif;
+}
+section.clientes h1{
+    color:  #0088a9;
+}
+.clientes .c1{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    gap: 60px;
+}
+.clientes .barra{
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    padding: 40px 0px 40px 40px ;
+    border: 2px solid #0088a9;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+}
+.clientes .barra p{
+    margin-top: 10px;
+}
+.clientes .c1 .emp{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.clientes .c1 .emp:hover{
+  
+    background-color: #292a2e;
+    transform: scale(1.5);
+    box-shadow: 0 0 8px;
+}
+.empresa{
+    color: #0088a9;
+}
+/* Contato */
+.contato .flex .txt-contato{
+    color: #0088a9;
+    padding: 40px 4%;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+}
+.ende {
+    background-color: #0088a9;
+    margin-top: 60px;
+}
+.ende .flex{
+    
+    padding: 40px 4% 400px 4%;
+    gap: 250px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400px;
+}
+.ende .flex .baixo h1{
+ 
+    color: #24252A;
+}
+.ende .flex .baixo p{
+    margin-bottom: 40px;
+}
